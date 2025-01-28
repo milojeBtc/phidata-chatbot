@@ -4,10 +4,10 @@ from phi.tools.duckduckgo import DuckDuckGo
 
 web_agent = Agent(
     name="Web Agent",
-    model=OpenAIChat(id="gpt-4o"),
+    model=OpenAIChat(id="gpt-4"),
     tools=[DuckDuckGo()],
     instructions=["Always include sources"],
     show_tool_calls=True,
     markdown=True,
 )
-web_agent.print_response("Tell me about OpenAI Sora?", stream=True)
+web_agent.print_response("Whats is google?", stream=True)
